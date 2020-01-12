@@ -87,3 +87,28 @@ getNum(9)
 // }
 // // youli.id = 234  //只读属性不能重复定义
 
+// 用接口表示数组
+// var arr:number[] = [1,2,'3']
+// 用接口来定义函数  可选参数
+// function fllName(last:string,frist?:string): string{
+//     return last+frist
+// }
+// let youli= function (age:number=2,name?:'zhangs'):string{
+//   return ''
+// }
+// 总结：参数名称后面加？是可选参数 ，属性=值，是默认参数，其中可选参数必须是参数的最后一个，也就是说可选参数后面没有别的参数了
+// let youLi = function(age:number=10,name:string):string{
+//   return ''
+// }
+// 报错原因是：'可选参数必须是参数的最后一项'
+// function youPush(a:any[],...item:any[]):any[]{
+//     return ['a']
+// }
+// youPush([],1,2,3)
+// // 其中a 和item都是数字，但是形参要求item 要一个个的
+// 数组的定义方法
+// let array :number[] = [1,2,3,4]  //普通定义数组的方法
+// 泛型定义方式 数组名字、leixiang 
+// let arr:Array<number> = [2,3,6]
+
+                                        

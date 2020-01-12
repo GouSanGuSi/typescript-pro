@@ -77,3 +77,17 @@ let youli:Item={
 youli.id = 234  //只读属性不能重复定义
 ```
 + 第四种情况：只读属性也需要符合接口的结构，只是不能重复赋值。
+## 函数
+```typescript
+let youli= function (age:number=2,name?:'zhangs'):string{
+  return ''
+}
+```
++ 总结：参数名称后面加？是可选参数 ，属性=值，是默认参数，其中可选参数必须是参数的最后一个，也就是说可选参数后面没有别的参数了
+
+```typescript
+let youLi = function(age?:number,name:string):string{
+  return ''
+}
+```
++ 报错原因是：'可选参数必须是参数的最后一项'
